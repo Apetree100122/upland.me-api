@@ -1,8 +1,3 @@
-Python Package:
-max-parallel: 5
-uses: actions/checkout@
-actions: setup-python
-run: |
-  $CONDA/bin >>$GITHUB_PATH
-  RUN: | 
-      update: PYTHON-PACKAGE-CONDA.ymL
+Python Package: install latest python 
+uses: actions/checkout@4
+setup: python
