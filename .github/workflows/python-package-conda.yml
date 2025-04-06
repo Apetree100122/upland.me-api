@@ -27,21 +27,3 @@ on: [push]
       run: |
         conda install pytest
         pytest
-
-
-   - name: Rate My OpenAPI Action
-  # You may pin to the exact commit or the version.
-  # uses: zuplo/rmoa-action@636b14126760fa64e406190580a8b3bad3312c89
-  uses: zuplo/rmoa-action@v1
-  with:
-    # Path to the OpenAPI spec that will be linted
-    filepath: 
-    # The API Key for RMOA API
-    apikey: 
-    # The maximum number of warnings allowed before labeling the run as failed.
-    max-warnings: # optional
-    # The maximum number of errors allowed before labeling the run as failed.
-    max-errors: # optional
-   # To label a lint run as successful/passing is 80.
-  minimum-score: # optional, default is 80
-          
